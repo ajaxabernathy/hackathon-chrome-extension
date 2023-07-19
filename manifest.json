@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "MDN - Move Dat Nuisance",
+  "version": "1.0",
+  "description": "By the time we visit MDN for information on a built-in method, we've already tried a few times at implementing that method. To us, MDN's 'Try It' code editor is redundant. Our Chrome extension moves this feature to the bottom of the page so you can get right to the information you need; syntax, parameters, and return value.",
+  "content_scripts": [
+    {
+      "matches": ["https://developer.mozilla.org/en-US/*"],
+      "js": ["./main.js"]
+    }
+  ], 
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png"
+  }
+}
+
+
